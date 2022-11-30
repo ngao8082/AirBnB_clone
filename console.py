@@ -23,7 +23,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, arg):
         """Exits console"""
-        return True
+        return User.all()
 
     def emptyline(self):
         """ overwriting the emptyline method """
